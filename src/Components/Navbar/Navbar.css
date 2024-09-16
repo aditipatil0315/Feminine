@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Teko:wght@300..700&display=swap');
+
+
+.nav_container {
+    height: 10vh;
+    background-color: #A5CFF2;
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+
+.navbar{
+    padding: 0 50px;
+    padding-bottom: 30px;
+    /* padding-top: 5px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #fbf39d; */
+}
+
+.nav_links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
+    color: #525252;
+    list-style: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 17px;
+    /* padding-top: 20px; */
+}
+
+.btns {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 90px;
+    outline: none;
+    border: 1px solid #acd1f0;
+    border-radius: 11px;
+    background-color: #fbf39d;
+    color: #525252;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+h3 {
+    font-size: 54px;
+    color: #fbf39d;
+    font-family: teko;
+    font-weight: 500;
+}
+
+

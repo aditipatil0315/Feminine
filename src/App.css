@@ -1,0 +1,7 @@
+
+.app_container {
+    display: flex;
+    /* justify-content: start; */
+    /* align-items: start; */
+    flex-direction: column;
+}
