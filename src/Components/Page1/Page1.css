@@ -86,6 +86,13 @@ span {
     padding:11rem 50px;
 }
 
-.text_line p {
-    
+.text_line h1 {
+    font-size: 27px;
+    font-weight: 600;
+    font-family: poppins;
+    color: #525252;
+}
+
+.text_line span {
+    font-size: 39px;
 }

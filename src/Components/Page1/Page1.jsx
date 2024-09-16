@@ -22,8 +22,8 @@ const Page1 = () => {
             </div>
         </div>
         <div className="text_line">
-            <p>from your periods tips to pregnancy advice </p>
-            <p>you have our support</p>
+            <h1>From your <span>  periods tips   </span> to <span>  pregnancy advice</span> </h1>
+            <h1>You have our support</h1>
         </div>
 
         
