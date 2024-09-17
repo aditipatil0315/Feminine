@@ -15,13 +15,13 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 1.5rem 50px;
+    padding: 0rem 50px;
 }
 
 .page3_right {
     height: 100%;
     width: 50%;
-    padding-top: 7rem;
+    padding-top: 5rem;
 }
 
 .page3_right h3 {
