@@ -4,10 +4,12 @@
 
 .nav_container {
     height: 10vh;
-    background-color: #A5CFF2;
+    background-color: white;
     width: 100%;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border: 1px solid #525252;
+    border-top: none;
+    /* border-bottom-left-radius: 30px; */
+    /* border-bottom-right-radius: 30px; */
 
 }
 
@@ -18,7 +20,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #fbf39d; */
 }
 
 .nav_links ul {
@@ -46,21 +47,27 @@ button {
     height: 40px;
     width: 90px;
     outline: none;
-    border: 1px solid #acd1f0;
-    border-radius: 11px;
+    border: 2px solid #525252;
+    border-radius: 9px;
     background-color: #FFEE9C;
     color: #525252;
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
+    transition: linear 0.3s;
 
+}
+
+button:hover {
+    background-color: #fff;
 }
 
 h3 {
     font-size: 54px;
-    color: #fbf39d;
+    color: #525252;
     font-family: teko;
     font-weight: 500;
+    /* -webkit-text-stroke: 1px #525252; */
 }
 
 

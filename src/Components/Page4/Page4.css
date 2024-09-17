@@ -1,6 +1,6 @@
 
 
-.page2_container {
+.page4_container {
     height: 100vh;
     width: 100%;
     /* background-color: yellow; */
@@ -8,24 +8,23 @@
     flex-direction: column;
 }
 
-.page2 {
+.page4 {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 7rem 50px;
+    padding: 1rem 50px;
 }
 
-.page2_left {
+.page4_left {
     height: 100%;
     width: 50%;
     padding-top: 7rem;
-    
 }
 
-.page2_left h3 {
+.page4_left h3 {
     font-family: poppins;
     line-height: 1;
     font-weight: 700;
@@ -34,15 +33,14 @@
     font-size: 54px;
 }
 
-.page2_left p {
+.page4_left p {
     font-family: poppins;
     font-size: 18px;
     font-weight: 500;
     padding-bottom: 1.5rem;
-
 }
 
-.page2_left button {
+.page4_left button {
     height: 50px;
     width: 120px;
     border: 2px solid #525252;
@@ -50,19 +48,18 @@
     transition: linear 0.3s;
 }
 
-.page2_left button:hover {
+.page4_left button:hover {
     background-color: #fff;
 }
 
-.page2_right {
+.page4_right {
     height: 100%;
     width: 50%;
-
 }
 
-.page2_right img {
+.page4_right img {
     position: absolute;
     height: 500px;
     right: 9%;
-    top: 20%
+    top: 5%;
 }
