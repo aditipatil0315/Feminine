@@ -1,9 +1,6 @@
 import React from 'react'
 import './Page1.css'
 import image_1 from '../../assets/img1.png.png'
-import image_2 from '../../assets/img2.png.png'
-import image_3 from '../../assets/img3.png.png'
-
 
 const Page1 = () => {
   return (

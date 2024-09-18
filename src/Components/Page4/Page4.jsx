@@ -1,6 +1,8 @@
 import React from 'react'
 import './Page4.css'
-import image from '../../assets/img1.png.png'
+import Workout from '../../assets/Workout.png'
+
+
 
 const Page4 = () => {
   return (
@@ -12,7 +14,7 @@ const Page4 = () => {
                 <button>Explore</button>
             </div>
             <div className="page4_right">
-                <img src={image} alt="" />
+                <img src={Workout} alt="" />
                 
             </div>
         </div>

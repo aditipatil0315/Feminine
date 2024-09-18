@@ -1,7 +1,7 @@
 
 
 .page4_container {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     /* background-color: yellow; */
     display: flex;
@@ -60,6 +60,6 @@
 .page4_right img {
     position: absolute;
     height: 500px;
-    right: 9%;
-    top: 5%;
+    right: 12%;
+    top: 1%;
 }

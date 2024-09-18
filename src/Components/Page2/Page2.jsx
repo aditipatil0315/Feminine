@@ -1,6 +1,8 @@
 import React from 'react'
 import './Page2.css'
-import image from '../../assets/img1.png.png'
+import Note from '../../assets/note.png'
+
+
 
 const Page2 = () => {
   return (
@@ -12,7 +14,7 @@ const Page2 = () => {
                 <button>Explore</button>
             </div>
             <div className="page2_right">
-                <img src= {image} alt="" />
+                <img src= {Note} alt="" />
                 
             </div>
 
