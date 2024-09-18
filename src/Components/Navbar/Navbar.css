@@ -51,10 +51,12 @@ button {
     border-radius: 9px;
     background-color: #FFEE9C;
     color: #525252;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 14px;
     cursor: pointer;
     transition: linear 0.3s;
+    font-family: poppins;
+
 
 }
 
@@ -68,6 +70,13 @@ h3 {
     font-family: teko;
     font-weight: 500;
     /* -webkit-text-stroke: 1px #525252; */
+}
+
+ a{
+    color: #525252;
+    text-decoration: none;
+    font-family: poppins;
+    font-weight: 700;
 }
 
 

@@ -70,3 +70,8 @@
     font-size: 27px;
     cursor: pointer;
 }
+
+.disclaimer  {
+    font-family: poppins;
+    font-weight: 500;
+}
