@@ -7,6 +7,8 @@ import Home from './Components/Home/Home';
 import Planner from './Components/Planner/Planner';
 import Quizes from './Components/Quizes/Quizes';
 import Products from './Components/Products/Products';
+import Quiz_pcos from './Components/Quiz_pcos/Quiz_pcos';
+import Quiz_menupause from './Components/Quiz_menupause/Quiz_menupause';
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
           <Route path='/planner' element={<Planner />} />
           <Route path='/quizes' element={<Quizes />} />
           <Route path='/products' element={<Products />} />
+          <Route path= '/Quiz_pcos' element={<Quiz_pcos/>} />
+          <Route path= '/Quiz_menupause' element={<Quiz_menupause/>} />
         </Routes>
         
       </div>

@@ -1,8 +1,13 @@
 import React from 'react'
+import './Planner.css';
 
 const Planner = () => {
+
   return (
-    <div>Planner</div>
+    <div className='planner_container'>
+
+
+    </div>
   )
 }
 

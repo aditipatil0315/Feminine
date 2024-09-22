@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
+import './Quiz_pcos.css';
+import { useNavigate } from 'react-router-dom';
 
-const PcosQuiz = () => {
+const Quiz_pcos = () => {
+
+  const navigate = useNavigate();
+
   const questions = [
     {
       question: 'Are your periods irregular or absent?',
@@ -100,16 +105,13 @@ const PcosQuiz = () => {
     },
   ];
 
-  // State to store answers
   const [answers, setAnswers] = useState({});
   const [result, setResult] = useState(null);
 
-  // Function to handle changes to answers
   const handleChange = (e, key) => {
     setAnswers({ ...answers, [key]: e.target.value });
   };
 
-  // Function to calculate the likelihood of PCOS based on answers
   const calculateResult = () => {
     let positiveAnswers = 0;
 
@@ -128,14 +130,15 @@ const PcosQuiz = () => {
     }
   };
 
-  // Function to reset the quiz
   const resetQuiz = () => {
     setAnswers({});
     setResult(null);
   };
 
   return (
-    <div>
+    <div className='quiz_container'>
+      <div className="quiz">
+
       <h1>PCOS/PCOD Quiz</h1>
       {questions.map((q, index) => (
         <div key={index}>
@@ -160,13 +163,21 @@ const PcosQuiz = () => {
             />
             No
           </label>
+          <p><br />The quiz is done. You may submit your responses.</p>
         </div>
       ))}
+      <div className="btns_1">
+
       <button onClick={calculateResult}>Submit</button>
-      <button onClick={resetQuiz}>Re-Attempt Quiz</button> {/* Reset Button */}
-      {result && <p>{result}</p>}
+      <button onClick={resetQuiz}>Re-Attempt Quiz</button> 
+      <button onClick={() => navigate('/Quizes')}>Back</button>
+      </div>
+
+      {result && <p>Here's your result <br /> {result}</p>}
     </div>
+    </div>
+
   );
 };
 
-export default PcosQuiz;
+export default Quiz_pcos;

@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Quiz_menupause.css'
+
 
 const PcosQuiz = () => {
+
+  const navigate = useNavigate();
+
     const menopauseQuestions = [
         {
           question: 'Have your periods become less frequent or stopped altogether?',
@@ -100,11 +106,16 @@ const PcosQuiz = () => {
   };
 
   return (
-    <div>
+    <div className='quiz_container'>
+      <div className="quiz">
+        <ol>
+
       <h1>Menupause Quiz</h1>
       {menopauseQuestions.map((q, index) => (
-        <div key={index}>
+        <li key={index}>
+          
           <p>{q.question}</p>
+          
           <label>
             <input
               type="radio"
@@ -115,6 +126,7 @@ const PcosQuiz = () => {
             />
             Yes
           </label>
+          
           <label>
             <input
               type="radio"
@@ -125,12 +137,29 @@ const PcosQuiz = () => {
             />
             No
           </label>
-        </div>
-      ))}
+         
+          
+
+        </li>
+    
+    
+  ))}
+
+  </ol>
+  <p><br />The quiz is done. You may submit your responses.</p>
+      <div className="btns_2">
+
       <button onClick={calculateResult}>Submit</button>
-      <button onClick={resetQuiz}>Re-Attempt Quiz</button> {/* Reset Button */}
-      {result && <p>{result}</p>}
-    </div>
+      <button onClick={resetQuiz}>Re-Attempt Quiz</button>
+      <button onClick={() => navigate('/Quizes')}>Back</button>
+      </div>
+
+      {result && <p>Here's your result <br /> {result}</p>}
+
+      </div>
+      
+      </div>
+
   );
 };
 

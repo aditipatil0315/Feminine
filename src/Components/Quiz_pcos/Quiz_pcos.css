@@ -22,7 +22,7 @@
     width: 150px;
 }
 
-.btns_2 {
+.btns_1 {
     display: flex;
     flex-direction: row; 
     gap: 1.2rem;
