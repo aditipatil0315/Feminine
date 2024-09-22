@@ -107,6 +107,8 @@ const PcosQuiz = () => {
 
   return (
     <div className='quiz_container'>
+            <button className='back' onClick={() => navigate('/Quizes')}>Back</button>
+
       <div className="quiz">
         <ol>
 
@@ -126,7 +128,7 @@ const PcosQuiz = () => {
             />
             Yes
           </label>
-          
+
           <label>
             <input
               type="radio"
@@ -151,7 +153,6 @@ const PcosQuiz = () => {
 
       <button onClick={calculateResult}>Submit</button>
       <button onClick={resetQuiz}>Re-Attempt Quiz</button>
-      <button onClick={() => navigate('/Quizes')}>Back</button>
       </div>
 
       {result && <p>Here's your result <br /> {result}</p>}

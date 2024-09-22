@@ -137,6 +137,8 @@ const Quiz_pcos = () => {
 
   return (
     <div className='quiz_container'>
+      <button className='back' onClick={() => navigate('/Quizes')}>Back</button>
+
       <div className="quiz">
 
       <h1>PCOS/PCOD Quiz</h1>
@@ -170,7 +172,6 @@ const Quiz_pcos = () => {
 
       <button onClick={calculateResult}>Submit</button>
       <button onClick={resetQuiz}>Re-Attempt Quiz</button> 
-      <button onClick={() => navigate('/Quizes')}>Back</button>
       </div>
 
       {result && <p>Here's your result <br /> {result}</p>}

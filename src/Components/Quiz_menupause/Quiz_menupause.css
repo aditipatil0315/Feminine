@@ -3,9 +3,10 @@
     border-radius: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     margin: auto; 
     min-height: 100vh;
+    flex-direction: column;
 }
 
 .quiz {
@@ -42,4 +43,11 @@ label {
 
 li {
     margin-bottom: 0.7em;
+}
+
+.back {
+    position: absolute;
+    margin: 30px 50px;
+    right: 0%;
+    top: 9%;
 }
