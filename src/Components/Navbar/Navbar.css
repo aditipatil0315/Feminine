@@ -3,19 +3,24 @@
 
 
 .nav_container {
-    height: 10vh;
+    height: 70px; 
     background-color: white;
     width: 100%;
     border: 1px solid #525252;
     border-top: none;
-    /* border-bottom-left-radius: 30px; */
-    /* border-bottom-right-radius: 30px; */
-
+    /* position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 10;  */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 10px 7px;
 }
 
 .navbar{
     padding: 0 50px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     /* padding-top: 5px; */
     display: flex;
     justify-content: space-between;
@@ -32,7 +37,7 @@
     font-weight: 600;
     cursor: pointer;
     font-size: 17px;
-    /* padding-top: 20px; */
+    padding-top: 10px;
 }
 
 .btns {
