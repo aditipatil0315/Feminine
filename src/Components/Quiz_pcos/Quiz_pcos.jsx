@@ -107,6 +107,7 @@ const Quiz_pcos = () => {
 
   const [answers, setAnswers] = useState({});
   const [result, setResult] = useState(null);
+  const [resultclass, setResultClass]  = useState('');
 
   const handleChange = (e, key) => {
     setAnswers({ ...answers, [key]: e.target.value });
@@ -123,16 +124,20 @@ const Quiz_pcos = () => {
 
     if (positiveAnswers >= 15) {
       setResult('High likelihood of PCOS/PCOD. Please consult a doctor.');
+      setResultClass('high');
     } else if (positiveAnswers >= 8) {
       setResult('Moderate likelihood of PCOS/PCOD. Consider seeing a doctor for further evaluation.');
+      setResultClass('medium');
     } else {
       setResult('Low likelihood of PCOS/PCOD, but consult a healthcare professional if you have concerns.');
+      setResultClass('low');
     }
   };
 
   const resetQuiz = () => {
     setAnswers({});
     setResult(null);
+    setResultClass('');
   };
 
   return (
@@ -165,16 +170,22 @@ const Quiz_pcos = () => {
             />
             No
           </label>
-          <p><br />The quiz is done. You may submit your responses.</p>
         </div>
       ))}
+      <p><br />The quiz is done. You may submit your responses.</p>
       <div className="btns_1">
 
       <button onClick={calculateResult}>Submit</button>
       <button onClick={resetQuiz}>Re-Attempt Quiz</button> 
       </div>
 
-      {result && <p>Here's your result <br /> {result}</p>}
+      <div className = "result">
+       
+        {result &&  <p className= {`${resultclass}`} > <h3>Here's your result - </h3> <br /> {result}</p>}
+     
+
+
+      </div>
     </div>
     </div>
 

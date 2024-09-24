@@ -12,8 +12,21 @@ const Quizes = () => {
   return (
     <div className='quizes_container'>
       <div className="quizes">
-        <button onClick={() => navigate('/Quiz_pcos')}>Pcos Quiz</button>
+        <div className="card_1">
+        <h5>PCOS/PCOD Quiz</h5>
+        <h6>Attempt this quiz to self examinate yourself.</h6>
+        <button onClick={() => navigate('/Quiz_pcos')}>Start</button>
+        </div>
+        <div className="card_2">
+        <h5>Menupause Quiz</h5>
+        <h6>Attempt this quiz to self examinate yourself.</h6>
+
         <button onClick={() => navigate('/Quiz_menupause')}>Menupause Quiz</button>
+        </div>
+      </div>
+      <div className="end_text">
+
+      <h3>More quizes coming soon...</h3>
       </div>
     </div>
   )
