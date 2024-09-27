@@ -53,7 +53,8 @@ const Footer = () => {
           THANK YOU
 
         </ol>
-      </div>) : (<button onClick={() => setIsVisible(true)}>Read Disclaimer</button>
+      </div>) : (<button onClick={() => setIsVisible(true)}>
+        Read Disclaimer</button>
 )}
       
     </div>

@@ -8,7 +8,7 @@ import menopauseImage from '../../assets/img1.png.png';
 import vaginalHealthImage from '../../assets/workout.png';
 import mentalHealthImage from '../../assets/img1.png.png';
 
-const productsArray = [
+const ProductsList = [
     {
         productName: "Maternity Products" ,
         imgURL : maternityImage
@@ -47,4 +47,4 @@ const productsArray = [
     },
 ]
 
-export default productsArray;
+export default ProductsList;
