@@ -9,6 +9,7 @@ import Quizes from './Components/Quizes/Quizes';
 import Products from './Components/Products/Products';
 import Quiz_pcos from './Components/Quiz_pcos/Quiz_pcos';
 import Quiz_menupause from './Components/Quiz_menupause/Quiz_menupause';
+import ProductSingle from './Components/Products/ProductSingle';
 // import Periods from './Components/Products/Periods';
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
           <Route path='/products' element={<Products />} />
           <Route path='/Quiz_pcos' element={<Quiz_pcos/>} />
           <Route path='/Quiz_menupause' element={<Quiz_menupause/>} />
+          <Route path= '/myproduct' element={<ProductSingle/>} />
           {/* <Route path='/Products/Periods' element={<Periods/>} /> */}
         </Routes>
         

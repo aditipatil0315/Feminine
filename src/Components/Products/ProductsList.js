@@ -1,4 +1,4 @@
-import maternityImage from '../../assets/img1.png.png';  // adjust the path based on your folder structure
+import maternityImage from '../../assets/img1.png.png';  
 import periodImage from '../../assets/workout.png';
 import fertilityImage from '../../assets/img1.png.png';
 import postpartumImage from '../../assets/workout.png';
@@ -11,39 +11,55 @@ import mentalHealthImage from '../../assets/img1.png.png';
 const ProductsList = [
     {
         productName: "Maternity Products" ,
-        imgURL : maternityImage
+        imgURL : maternityImage,
+        category: "Maternity"
     },
     {
         productName: "Period Products" ,
-        imgURL : periodImage
+        imgURL : periodImage,
+        category: "Periods"
     },
     {
         productName: "Fertility & Pregnancy Health" ,
-        imgURL : fertilityImage
+        imgURL : fertilityImage,
+        category: "Fertility"
     },
     {
         productName: "Postpartum Care" ,
-        imgURL : postpartumImage
+        imgURL : postpartumImage,
+        category: "Postpartum"
+
+        
     },
     {
         productName: "Exercise & Fitness for Women" ,
-        imgURL : exerciseImage
+        imgURL : exerciseImage,
+        category: "Exercise"
+
     },
     {
         productName: "Pelvic Health" ,
-        imgURL : pelvicHealthImage
+        imgURL : pelvicHealthImage,
+        category: "Pelvic"
+
     },
     {
         productName: "Menopause Care" ,
-        imgURL : menopauseImage
+        imgURL : menopauseImage,
+        category: "Menopause"
+
     },
     {
         productName: " Vaginal Health" ,
-        imgURL : vaginalHealthImage
+        imgURL : vaginalHealthImage,
+        category: "Vaginal"
+
     },
     {
         productName: "Mental Health & Relaxation" ,
-        imgURL : mentalHealthImage
+        imgURL : mentalHealthImage,
+        category: "Mental"
+
     },
 ]
 
