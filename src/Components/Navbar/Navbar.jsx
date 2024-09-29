@@ -15,6 +15,7 @@ const Navbar = () => {
                     <Link to ='/planner'> <li>Planner</li> </Link>
                     <Link to ='/quizes'> <li>Quizes</li> </Link>
                     <Link to ='/products'> <li>Products</li> </Link>
+                    <Link to ='/chatbot' > <li>Chatbot</li></Link>
                 </ul>
             </div>
             <div className="btns">
