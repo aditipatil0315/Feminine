@@ -1,0 +1,59 @@
+
+
+.chatbot_container {
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    position: relative;
+    
+}
+
+.tagline{
+    margin-bottom: 20px;
+}
+
+.tagline h1 {
+    text-align: center;
+    font-family: poppins;
+    color: #525252;
+}
+
+.input_area {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: 2%;
+}
+
+.input_area input {
+    height: 39px;
+    width: 500px;
+    outline: none;
+    padding: 5px;
+    border: 1px solid #525252;
+    border-radius: 16px;
+    font-size: 15px;
+    font-family: poppins;
+}
+
+.chatbot_container .response{
+    position: absolute;
+    top: 20%;
+    height: 80vh;
+    width: 80%;
+    background-color:#ffef9c63;
+    padding: 30px 50px;
+    overflow-y: auto ;
+    border-radius: 30px;
+}
+
+.warning_text {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
