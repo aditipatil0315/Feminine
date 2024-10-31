@@ -12,16 +12,16 @@ const Navbar = () => {
             <div className="nav_links">
                 <ul>
                     <Link to ='/'> <li>Home</li> </Link>
-                    <Link to ='/planner'> <li>Planner</li> </Link>
+                    {/* <Link to ='/planner'> <li>Planner</li> </Link> */}
                     <Link to ='/quizes'> <li>Quizes</li> </Link>
-                    <Link to ='/products'> <li>Products</li> </Link>
                     <Link to ='/chatbot' > <li>Chatbot</li></Link>
+                    <Link to ='/products'> <li>Products</li> </Link>
                 </ul>
             </div>
             <div className="btns">
 
-            <button>SignUp</button>
-            <button>LogIn</button>
+            {/* <button>SignUp</button>
+            <button>LogIn</button> */}
 
             </div>
         </div>

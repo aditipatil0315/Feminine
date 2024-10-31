@@ -4,16 +4,36 @@ import './Chatbot.css'
 
 
 const Chatbot = () => {
-    const [answerText, setAnswerText] = useState();
-    // console.log(answerText);
-    const [response, setResponse] = useState();
+    const [answerText, setAnswerText] = useState('');
+    const [response, setResponse] = useState('');
+    const [loading, setLoading] = useState(false);
+    const [result , setResult] = useState(false);
+    const [showResult, setShowResult] = useState(false)
+    const [resultData, setResultData] = useState("")
+    
+
+
 
     const gemini = async () => {
-        console.log(answerText);
-        console.log("loading...");
+        setLoading(true);
         const finalAns = await run(answerText);
-        setResponse(finalAns);
-        console.log(finalAns);
+        let responseArray = finalAns.split("**");
+    let newResponse ;
+    for(let i = 0 ; i < responseArray.length; i++){
+      if ( i===0 || i%2 !== 1) {
+        newResponse += responseArray[i]
+
+      } else {
+        newResponse += "<b>" + responseArray[i] + "</b>";
+      }
+
+    }
+
+    let finalResponse = newResponse.split("*").join("</br>")
+        setResponse(finalResponse);
+        setResult(true);
+        setLoading(false);
+        // console.log(finalAns);
 
     }
 
@@ -32,13 +52,62 @@ const Chatbot = () => {
         <button onClick={gemini}>Send</button>
         </div>
         <p className='warning_text'>Read the disclaimer carefully.</p>
-        <div className="response">
-        
 
-        <p>{response}</p>
+      
+        <div className="response">
+        <h1  className={result ? "notVisible" : "need_help" }>Need Help? We're Here for You!</h1>
+          {loading ? <div className='loader'>
+          <hr /><hr /><hr />
+          Loading...
+        </div>  : <p>{response}</p>  } 
+         
+        
+        
+        
         </div>
     </div>
   )
 }
 
 export default Chatbot
+
+
+
+
+
+
+
+
+
+
+
+    // const delayPara = (index, next) =>{
+    //     setTimeout(function (){
+    //         setResultData(prev=>prev+next)
+    //     }, 75*index)
+    // }
+
+
+    // const onSent = async (prompt) => {
+    //     setResultData("")
+    //     setLoading(true)
+    //     setShowResult(true)
+    //     setRecentPrompt(input)
+    //     setInput("")
+    //     const response = await run(input);
+    //     let responseArray = response.split("**");
+    //     let newResponse;
+    //     for(let i=0; i<responseArray.length; i++){
+    //         if(i===0 || i%2 !== 1){
+    //             newResponse += responseArray[i];
+    //         }
+    //         else{
+    //             newResponse += "<b>"+responseArray[i]+"</b>"
+    //         }
+    //     }
+    //     let newResponse2 = newResponse.split("*").join("</br>")
+    //     let newresponseArray = newResponse2.split(" ");
+    //     delayPara(newresponseArray)
+    //     }
+    //     setLoading(false);
+    // }

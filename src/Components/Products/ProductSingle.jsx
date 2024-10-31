@@ -1,6 +1,5 @@
 import React from 'react'
-import Maternity from './Maternity.js'
-import Periods from './Periods.js'
+import './ProductSingle.css'
 import ProductsList from "./ProductsList.js"
 import AllCategories from './AllCategories.js'
 
@@ -12,14 +11,22 @@ const ProductSingle = ({prop}) => {
 
   return (
     
-    <div>
+    <div className='main_div_div'>
         {AllCategories.filter(item => item.category === prop).map((item,idx) => {
             return (
+              <div >
+                
                 <div key={idx} className="div">
-
-                <h1>{item.name}</h1>
-                <a href={item.link}>link</a>
+                <div className="imgsection">
+                  <img src={item.imgurl} alt="" />
                 </div>
+                <br />
+
+                <h5>{item.name}</h5>
+                <a href={item.link}>Buy now</a>
+                </div>
+              </div>
+                  
             )
         })}
         

@@ -55,12 +55,7 @@ const ProductsList = [
         category: "Vaginal"
 
     },
-    {
-        productName: "Mental Health & Relaxation" ,
-        imgURL : mentalHealthImage,
-        category: "Mental"
-
-    },
+    
 ]
 
 export default ProductsList;

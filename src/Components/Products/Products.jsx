@@ -17,24 +17,34 @@ const Products = () => {
 
 
   return (
+
+    
       <div className="products_container">
+                          <h3>Select the category of the products below -</h3> <br /><br />
 
-        <h3>Select the category of the products below -</h3> <br /><br />
-        < div className="product_cards" >
 
-          {ProductsList.map((item, idx) => (
-            <div key={idx} className="product" onClick={() => setName(item.category)}>
-              
 
-            <h3 >{item.productName}</h3>
-            <img src= {item.imgURL}  />
-            
-            </div>
-          ))}
-          
-          
-        </div>
-        <ProductSingle prop={name}  />
+        {name === "" ? (< div className="product_cards" >
+
+{ProductsList.map((item, idx) => (
+  <div key={idx} className="product" onClick={() => setName(item.category)}>
+    
+
+  <h3 >{item.productName}</h3>
+  <img src= {item.imgURL}  />
+  
+  </div>
+))}
+
+
+</div>) : ( <div className="div_prod">
+  <ProductSingle prop={name}  />
+  <button className='btn_' onClick={() => setName("")}>Back</button>
+</div>
+)}
+
+        
+        
         {/* <button onClick={() => setName("maternity")}>maternity</button> */}
         {/* <button onClick={() => setName("periods")}>periods</button> */}
       

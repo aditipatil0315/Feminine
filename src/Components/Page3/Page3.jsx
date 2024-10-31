@@ -1,9 +1,15 @@
 import React from 'react'
 import './Page3.css'
 import Food from '../../assets/food.png'
+import { useNavigate } from 'react-router-dom'
+
 
 
 const Page3 = () => {
+
+  const navigate = useNavigate();
+
+
   return (
     <div className='page3_container'>
         <div className="page3">
@@ -11,9 +17,9 @@ const Page3 = () => {
                 <img src={Food} alt="" />
             </div>
             <div className="page3_right">
-                <h3>Planned <br />diet with tracked <br /> Nutrients to replenish your body.</h3>
-                <p>"Receive a personalized diet plan with carefully tracked nutrients to help nourish and restore your body."</p>
-                <button>Explore</button>
+                <h3>Take Our Women's Health Quizzes to know yourself more better.</h3>
+                <p>"Whether you’re exploring signs of menopause or managing PCOS/PCOD, these quizzes are a compassionate guide to help you take control of your well-being."</p>
+                <button onClick={() => navigate('/quizes')}>Explore</button>
             </div>
         </div>
     </div>

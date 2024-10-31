@@ -63,3 +63,9 @@ h3 {
     scale: 1.05;
 
 }
+
+.btn_ {
+    position: absolute;
+    top: 90px;
+    right: 59px;
+}

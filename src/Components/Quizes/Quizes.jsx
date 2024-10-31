@@ -21,7 +21,7 @@ const Quizes = () => {
         <h5>Menupause Quiz</h5>
         <h6>Attempt this quiz to self examinate yourself.</h6>
 
-        <button onClick={() => navigate('/Quiz_menupause')}>Menupause Quiz</button>
+        <button onClick={() => navigate('/Quiz_menupause')}>Start</button>
         </div>
       </div>
       <div className="end_text">
