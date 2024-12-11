@@ -1,6 +1,6 @@
 import React from 'react'
 import './Page4.css'
-import Workout from '../../assets/Workout.png'
+import Workout from '../../assets/workout.png'
 import { useNavigate } from 'react-router-dom'
 
 
