@@ -25,6 +25,8 @@
 .disclaimer{
     height: 500px;
     width: 700px;
+    z-index: 100;
+
     position: absolute;
     overflow: auto;
     bottom: 250%;

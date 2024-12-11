@@ -8,6 +8,7 @@ const Footer = () => {
   return (
     <div className="footer_container">
       <div className="footer">
+        
         <p>All the information provided is for project purpose only.</p>
       </div>
 
